@@ -29,12 +29,27 @@
 # How to detect SQL injection vulnerabilities 
 ---
 
-1. Use the single quote ' and see what happen.
-2. Make test and see the time of responses so there is something.
+1. Use the single quote ' and see what happens.
+2. Make a test and see the time of responses so there is something.
 3. boolean values 1=1 and some stuff like that.
 4. OAST is a detector of vulnerabilities.
 
-# Parts of appearance are vulnerabilities for injection.
+# Different parts of query (Where we can make some tests).
 ---
+
+In UPDATE statements, within the updated values or the WHERE clause.
+In INSERT statements, within the inserted values.
+In SELECT statements, within the table or column name.
+In SELECT statements, within the ORDER BY clause.
+
+
+# Examples of SQL injections
+---
+Retrieving hidden data : where we modify the query to get additional results
+Subverting app logic : change query to see the logic of the app
+Union attacks : where you retrieve data from different database
+Blind SQL inj : it s to get informations but the attacker must choose a way to see those information , we don t know some time in the timing.
+
+
 
 
